@@ -31,7 +31,7 @@
 
 #define COLLISION_TRACE ECC_GameTraceChannel4
 
-AFlockFish::AFlockFish(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
+AFlockFish::AFlockFish(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
 	base = ObjectInitializer.CreateDefaultSubobject<UStaticMeshComponent>(this, TEXT("FishMesh"));
 	RootComponent = base;
